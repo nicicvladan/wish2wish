@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Wish2Wish</title>
+</head>
+
+<body>
+    <!-- coockie -->
+    <div id="cookie">
+        <h1>Dobrodosli na sajt</h1>
+        <h2>Ovaj sajt koristi kolacice</h2>
+        <div class="cookie-btns mt-4">
+            <button id="accept" class="btn btn-lg btn-info me-3">Prihvatam</button><button id="refuse" class="btn btn-lg btn-warning">Odbijam</button>
+        </div>
+        
+        
+    </div>
+    <!-- coockie -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Wish2Wish</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button> 
+
+             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a id="all-wish-btn" class="nav-link active" aria-current="page" href="#">AllWishes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="add-wish-btn"  class="nav-link" href="#">AddWish</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="edit-delete-btn"  class="nav-link" href="#">Edit-Delete</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input id="search-input" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div class="container">
+        <div id="all-wish-view" class="row">
+            <h2 class="display-4">All Wishes</h2>
+            <div class="col-10 offset-1">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Item</th>
+                            <th>Price</th>
+                            <th>Link</th>
+                            <th>Important</th>
+                            <th>Source</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+
+        <div id="edit-delete-view" class="row">
+            <h2 class="display-4">Edit / Delete </h2>
+            <div class="col-10 offset-1">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Item</th>
+                            <th>Price</th>
+                            <th>Link</th>
+                            <th>Important</th>
+                            <th>Source</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+
+
+        <div id="add-wish-view" class="row">
+            <h2 class="display-4">Add Wish</h2>
+            <div class="col-6 offset-3">
+                <input type="text" class="form-control" name="id" placeholder="id"><br>
+                <input type="text" class="form-control" name="item" placeholder="item"><br>
+                <input type="text" class="form-control" name="price" placeholder="price"><br>
+                <input type="text" class="form-control" name="link" placeholder="link"><br>
+                <input type="text" class="form-control" name="source" placeholder="source"><br>
+                <input class="me-2" type="checkbox" name="important" checked>Important<br><br>
+                <button id="save-btn" class="btn btn-primary">Save Wish</button>
+               
+            </div>
+        </div>
+
+        <div id="edit-wish-view" class="row">
+            <h2 class="display-4">Edit Wish</h2>
+            <div class="col-6 offset-3">
+                <input type="text" class="form-control" name="eid" placeholder="id"><br>
+                <input type="text" class="form-control" name="eitem" placeholder="item"><br>
+                <input type="text" class="form-control" name="eprice" placeholder="price"><br>
+                <input type="text" class="form-control" name="elink" placeholder="link"><br>
+                <input type="text" class="form-control" name="esource" placeholder="source"><br>
+                <input class="me-2" type="checkbox" name="eimportant" checked>Important<br><br>
+                <button id="update-btn" class="btn btn-info">Update Wish</button>
+               
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="wishes.js"></script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>

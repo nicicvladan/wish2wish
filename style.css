@@ -1,0 +1,57 @@
+table.table tr.important td{
+    background-color: pink;
+}
+
+#add-wish-view{
+    display: none;
+    background-color: #f9ffe6;
+    padding: 10px;
+
+}
+
+.nav-item a.active{
+    border-left: 1px solid cadetblue;
+    border-top: 1px solid cadetblue;
+    border-right: 1px solid cadetblue;
+}
+
+#edit-delete-view{
+    display: none;
+
+}
+#edit-wish-view{
+    display: none;
+
+}
+.container{
+    margin-top: 50px;
+
+}
+
+.visible{
+    display: block;
+}
+.non-visible{
+    display: none;
+}
+
+/* coockie */
+#cookie{
+    font-size: 34px;
+
+    text-align: center;
+    width: 1250px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    z-index: 99;
+    backdrop-filter: blur(10px);
+    margin: 0 auto;
+    border: 1px solid black;
+
+}
