@@ -57,3 +57,23 @@ table.table tr.important td{
 }
 
 
+@media only screen and (max-width: 400px) {
+    #cookie{
+        font-size: 14px;
+
+        text-align: center;
+        width: 310px;
+        height: 310px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 16%;
+        left: 7%;
+        z-index: 99;
+        backdrop-filter: blur(10px);
+        margin: 0 auto;
+        border: 1px solid black;
+    }
+  }
