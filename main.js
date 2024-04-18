@@ -10,6 +10,7 @@ function save() {
 let index = null;
 
 
+
 //views
 let allWishView = document.querySelector('#all-wish-view');
 let allWishTbody = allWishView.querySelector('tbody');
@@ -17,6 +18,8 @@ let addWishView = document.querySelector('#add-wish-view');
 let editDeleteView = document.querySelector('#edit-delete-view');
 let editDeleteTbody = editDeleteView.querySelector('tbody');
 let editWishView = document.querySelector('#edit-wish-view');
+
+
 
 
 

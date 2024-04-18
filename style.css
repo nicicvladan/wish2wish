@@ -55,3 +55,11 @@ table.table tr.important td{
     border: 1px solid black;
 
 }
+
+
+/* @media only screen and (max-width: 400px) {
+    .media-query {
+     width: 70%;
+     padding: 10px;
+    }
+  } */
